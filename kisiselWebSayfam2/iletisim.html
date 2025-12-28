@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belinay Denek - İletişim</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-wrapper">
+    <!-- THEME TOGGLE -->
+    <button class="theme-toggle" id="themeToggle">🌙</button>
+    
+    <!-- SCROLL TO TOP -->
+    <button class="scroll-to-top" id="scrollToTop">↑</button>
+
+    <!-- MEGA-MENU -->
+    <nav class="mega-menu">
+        <ul>
+            <li><a href="giris.html">Giriş Sayfası</a></li>
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="index.html#about">Hakkımda</a></li>
+            <li class="dropdown">
+                <a href="index.html#projects">Projelerim</a>
+                <ul class="submenu">
+                    <li><a href="https://github.com/belinaydenek0/basic-butterflies/blob/main/say%C4%B1tahminoyunu.py" target="_blank">Tkinter ile Sayı Tahmin Oyunu (Python)</a></li>
+                    <li><a href="https://github.com/belinaydenek0/basic-butterflies/blob/main/minihesapmakinesi.py" target="_blank">Tkinter ile Hesap Makinesi (Python)</a></li>
+                    <li><a href="https://github.com/belinaydenek0/basic-butterflies/blob/main/ya%C5%9Fag%C3%B6remesaj.py" target="_blank">Tkinter ile Yaşa Göre Mesaj (Python)</a></li>
+                    <li><a href="https://github.com/belinaydenek0/basic-butterflies/blob/main/NotAraligiUygulamasi/src/Main.java" target="_blank">Harf Notu Uygulaması (Java)</a></li>
+                    <li><a href="https://github.com/belinaydenek0/basic-butterflies/blob/main/KafeSiparis/src/Main.java" target="_blank">Kafe Sipariş Uygulaması (Java)</a></li>
+                </ul>
+            </li>
+            <li><a href="index.html#fav">Hobilerim</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
+        </ul>
+    </nav>
+
+    <!-- SOL SIDEBAR -->
+    <aside class="sidebar">
+        <img class="logo-sidebar" src="resim/BLNY.png" alt="Logo">
+        <nav>
+            <ul>
+                <li><a href="giris.html">Giriş Sayfası</a></li>
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="index.html#about">Hakkımda</a></li>
+                <li><a href="index.html#projects">Projeler</a></li>
+                <li><a href="index.html#fav">Hobilerim</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- SAĞ SIDEBAR (Çalışma Saatleri ve Takvim) -->
+    <aside class="sidebar-right">
+        <h3>Çalışma Saatlerim</h3>
+        <div class="working-hours-sidebar">
+            <div class="hours-item weekday">
+                <span class="day">Hafta İçi</span>
+                <span class="time">09:00 - 18:00</span>
+            </div>
+            <div class="hours-item saturday">
+                <span class="day">Cumartesi</span>
+                <span class="time">10:00 - 16:00</span>
+            </div>
+            <div class="hours-item sunday">
+                <span class="day">Pazar</span>
+                <span class="time">Kapalı</span>
+            </div>
+        </div>
+
+        <h3>Takvim</h3>
+        <div class="calendar">
+            <div class="calendar-header">
+                <button onclick="changeMonth(-1)">❮</button>
+                <span id="currentMonth">Kasım 2024</span>
+                <button onclick="changeMonth(1)">❯</button>
+            </div>
+            <div class="calendar-grid" id="calendarGrid">
+                <!-- Takvim JavaScript ile oluşturulacak -->
+            </div>
+        </div>
+
+        <h3>Hızlı İletişim</h3>
+        <div class="quick-contact-sidebar">
+            <div class="quick-contact-item">
+                <span class="quick-icon">📧</span>
+                <a href="mailto:belinaydenek@gmail.com" class="quick-link">E-posta Gönder</a>
+            </div>
+            <div class="quick-contact-item">
+                <span class="quick-icon">📱</span>
+                <span class="quick-text">+90 (XXX) XXX XX XX</span>
+            </div>
+            <div class="quick-contact-item">
+                <span class="quick-icon">📍</span>
+                <span class="quick-text">Ankara, Türkiye</span>
+            </div>
+        </div>
+    </aside>
+
+    <main>
+        <h1>İletişim</h1>
+
+        <!-- İLETİŞİM BİLGİLERİ -->
+        <section class="content-section">
+            <h2>Bana Ulaşın</h2>
+            <p>Benimle iletişime geçmek için aşağıdaki bilgileri kullanabilirsiniz. Projeler, işbirliği fırsatları veya herhangi bir sorunuz için benimle iletişime geçmekten çekinmeyin.</p>
+            
+            <div class="contact-info-grid">
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <h3>E-posta</h3>
+                    <p>En hızlı iletişim yolu</p>
+                    <a href="mailto:belinaydenek@gmail.com" class="contact-email">belinaydenek@gmail.com</a>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">📱</div>
+                    <h3>Telefon</h3>
+                    <p>Hafta içi 09:00-18:00</p>
+                    <span class="contact-phone">+90 (XXX) XXX XX XX</span>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <h3>Konum</h3>
+                    <p>Yaşadığım şehir</p>
+                    <span class="contact-location">Ankara, Türkiye</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- SOSYAL MEDYA -->
+        <section class="content-section social-media">
+    <h2>Sosyal Medya</h2>
+    <p>Beni sosyal medya hesaplarımdan da takip edebilirsiniz.</p>
+    <div class="social-media-modern">
+        <a href="https://www.instagram.com/blny_dnk_71/" target="_blank" class="social-modern-card instagram">
+            <div class="social-modern-icon">📷</div>
+            <h3>Instagram</h3>
+            <p class="social-modern-description">Kişisel paylaşımlarım ve günlük hayatımdan kesitler</p>
+            <span class="social-modern-handle">@blny_dnk_71</span>
+            <span class="social-modern-cta">Takip Et →</span>
+        </a>
+
+        <a href="https://github.com/belinaydenek0" target="_blank" class="social-modern-card github">
+            <div class="social-modern-icon">💻</div>
+            <h3>GitHub</h3>
+            <p class="social-modern-description">Açık kaynak projelerim ve kod örneklerim</p>
+            <span class="social-modern-handle">belinaydenek0</span>
+            <span class="social-modern-cta">Projeleri İncele →</span>
+        </a>
+
+        <a href="https://www.linkedin.com/in/belinay-denek-747a7b325/" target="_blank" class="social-modern-card linkedin">
+            <div class="social-modern-icon">👔</div>
+            <h3>LinkedIn</h3>
+            <p class="social-modern-description">Profesyonel bağlantılar ve iş teklifleri</p>
+            <span class="social-modern-handle">belinay-denek</span>
+            <span class="social-modern-cta">Bağlantı Kur →</span>
+        </a>
+
+        <a href="mailto:belinaydenek@gmail.com" class="social-modern-card email">
+            <div class="social-modern-icon">📧</div>
+            <h3>E-posta</h3>
+            <p class="social-modern-description">Doğrudan iletişime geçebilirsiniz</p>
+            <span class="social-modern-handle">belinaydenek@gmail.com</span>
+            <span class="social-modern-cta">E-posta Gönder →</span>
+        </a>
+    </div>
+</section>
+
+        <!-- İLETİŞİM FORMU -->
+        <section class="content-section">
+            <h2>İletişim Formu</h2>
+            <p>Mesajınızı doğrudan bana iletmek için aşağıdaki formu doldurabilirsiniz.</p>
+            
+            <form class="simple-contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Adınız Soyadınız *</label>
+                    <input type="text" id="name" name="name" placeholder="Adınızı ve soyadınızı girin" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">E-posta Adresiniz *</label>
+                    <input type="email" id="email" name="email" placeholder="ornek@email.com" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Telefon Numaranız</label>
+                    <input type="tel" id="phone" name="phone" placeholder="(5XX) XXX XX XX">
+                </div>
+                
+                <div class="form-group">
+                    <label for="subject">Konu *</label>
+                    <select id="subject" name="subject" required>
+                        <option value="">Konu seçin</option>
+                        <option value="proje">Proje Teklifi</option>
+                        <option value="soru">Soru</option>
+                        <option value="isbirligi">İşbirliği</option>
+                        <option value="freelance">Freelance İş</option>
+                        <option value="diger">Diğer</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Mesajınız *</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Mesajınızı buraya yazın..." required></textarea>
+                </div>
+                
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">Yeni projeler ve duyurular hakkında bilgi almak istiyorum.</label>
+                </div>
+                
+                <button type="submit" class="submit-button">
+                    <span class="button-text">Mesajı Gönder</span>
+                    <span class="button-icon">✉️</span>
+                </button>
+                
+                <div class="form-note">
+                    <p>* İşaretli alanlar zorunludur. Size en kısa sürede dönüş yapacağım.</p>
+                </div>
+            </form>
+        </section>
+
+        <!-- HARİTA ve KONUM -->
+        <section class="content-section">
+            <h2>Konumum</h2>
+            <p>Ankara'da yaşıyorum. Haritada yaklaşık konumumu görebilirsiniz.</p>
+            
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <div class="map-content">
+                        <div class="map-pin">📍</div>
+                        <h3>Ankara, Türkiye</h3>
+                        <p>Harita görüntüleniyor...</p>
+                        <div class="map-details">
+                            <p><strong>Bölge:</strong> Mamak / Ankara</p>
+                            <p><strong>Ulaşım:</strong> Metro ve otobüs ile kolay ulaşım</p>
+                            <p><strong>Not:</strong> Ofis ziyareti için önceden randevu alınız.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SIK SORULAN SORULAR -->
+        <section class="content-section">
+            <h2>Sık Sorulan Sorular</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>❓</span>
+                        <h3>Ne kadar sürede dönüş yapıyorsunuz?</h3>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Genellikle 24-48 saat içinde dönüş yapıyorum. Hafta sonları biraz daha uzun sürebilir.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>❓</span>
+                        <h3>Freelance iş kabul ediyor musunuz?</h3>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Evet, zamanım ve uygunluğuma göre freelance projeler kabul ediyorum. Detaylı bilgi için iletişim formunu doldurabilirsiniz.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>❓</span>
+                        <h3>Hangi projelerde işbirliği yapabiliriz?</h3>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Web geliştirme, Python uygulamaları, Java projeleri ve Tkinter arayüz geliştirme konularında işbirliği yapabiliriz.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+            <footer class="footer">
+                <img src="resim/BLNY.png" alt="Logo" class="footer-logo">
+                <p>&copy; 2025 Belinay Denek</p>
+            </footer>
+    </main>
+
+
+
+
+    <script>
+        // THEME TOGGLE
+        const themeToggle = document.getElementById('themeToggle');
+        const currentTheme = localStorage.getItem('theme') || 'dark';
+        
+        document.documentElement.setAttribute('data-theme', currentTheme);
+        updateThemeButton(currentTheme);
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeButton(newTheme);
+        });
+
+        function updateThemeButton(theme) {
+            themeToggle.textContent = theme === 'dark' ? '🌙' : '☀️';
+        }
+
+        // SCROLL TO TOP
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollToTopBtn.classList.add('show');
+            } else {
+                scrollToTopBtn.classList.remove('show');
+            }
+        });
+
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // TAKVİM FONKSİYONLARI
+        let currentDate = new Date();
+
+        function generateCalendar() {
+            const monthNames = ["Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran",
+                "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"];
+            
+            const year = currentDate.getFullYear();
+            const month = currentDate.getMonth();
+            
+            document.getElementById('currentMonth').textContent = `${monthNames[month]} ${year}`;
+            
+            const firstDay = new Date(year, month, 1);
+            const lastDay = new Date(year, month + 1, 0);
+            const startingDay = firstDay.getDay();
+            const totalDays = lastDay.getDate();
+            
+            const calendarGrid = document.getElementById('calendarGrid');
+            calendarGrid.innerHTML = '';
+            
+            // Gün başlıkları
+            const days = ['Pzt', 'Sal', 'Çar', 'Per', 'Cum', 'Cmt', 'Paz'];
+            days.forEach(day => {
+                const dayElement = document.createElement('div');
+                dayElement.className = 'calendar-day header';
+                dayElement.textContent = day;
+                calendarGrid.appendChild(dayElement);
+            });
+            
+            // Boş günler
+            for (let i = 0; i < startingDay; i++) {
+                const emptyDay = document.createElement('div');
+                emptyDay.className = 'calendar-day';
+                calendarGrid.appendChild(emptyDay);
+            }
+            
+            // Günler
+            const today = new Date();
+            for (let day = 1; day <= totalDays; day++) {
+                const dayElement = document.createElement('div');
+                dayElement.className = 'calendar-day';
+                dayElement.textContent = day;
+                
+                if (day === today.getDate() && month === today.getMonth() && year === today.getFullYear()) {
+                    dayElement.classList.add('today');
+                }
+                
+                calendarGrid.appendChild(dayElement);
+            }
+        }
+
+        function changeMonth(direction) {
+            currentDate.setMonth(currentDate.getMonth() + direction);
+            generateCalendar();
+        }
+
+        // FORM SUBMISSION
+        const contactForm = document.getElementById('contactForm');
+        
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(event) {
+                event.preventDefault();
+                
+                // Form verilerini al
+                const formData = new FormData(contactForm);
+                const name = formData.get('name');
+                const email = formData.get('email');
+                
+                // Doğrulama
+                if (!name || !email) {
+                    alert('Lütfen zorunlu alanları doldurun (Adınız ve E-posta).');
+                    return;
+                }
+                
+                // Gönder butonunu devre dışı bırak
+                const submitBtn = contactForm.querySelector('.submit-button');
+                const originalText = submitBtn.querySelector('.button-text').textContent;
+                submitBtn.querySelector('.button-text').textContent = 'Gönderiliyor...';
+                submitBtn.disabled = true;
+                
+                // Simüle edilmiş gönderim (gerçek uygulamada sunucuya gönderilir)
+                setTimeout(() => {
+                    // Başarılı mesajı
+                    alert('Teşekkürler ' + name + '! Mesajınız başarıyla gönderildi. En kısa sürede size dönüş yapacağım.');
+                    
+                    // Formu temizle
+                    contactForm.reset();
+                    
+                    // Butonu eski haline getir
+                    submitBtn.querySelector('.button-text').textContent = originalText;
+                    submitBtn.disabled = false;
+                }, 1500);
+            });
+        }
+
+        // FAQ AÇ/KAPA
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                faqItem.classList.toggle('active');
+            });
+        });
+
+        // SCROLL ANIMATIONS
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    
+                    // Özel animasyonlar için
+                    if (entry.target.classList.contains('contact-item')) {
+                        setTimeout(() => {
+                            entry.target.style.animationDelay = '0s';
+                        }, 100);
+                    }
+                }
+            });
+        }, observerOptions);
+
+        // Observe all animated elements
+        document.addEventListener('DOMContentLoaded', () => {
+            const animatedElements = document.querySelectorAll('.content-section, .contact-item, .social-card, .faq-item, .map-placeholder');
+            animatedElements.forEach(el => observer.observe(el));
+            
+            // Takvimi oluştur
+            generateCalendar();
+        });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kişisel Web Sayfam</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- THEME TOGGLE -->
+    <button class="theme-toggle" id="themeToggle">🌙</button>
+    
+    <!-- SCROLL TO TOP -->
+    <button class="scroll-to-top" id="scrollToTop">↑</button>
+
+    <!-- MEGA-MENU -->
+    <nav class="mega-menu">
+        <ul>
+            <li><a href="giris.html">Giriş Sayfası</a></li>
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="#about">Hakkımda</a></li>
+            <li class="dropdown">
+                <a href="#projects">Projelerim</a>
+                <ul class="submenu">
+                    <li><a href="https://github.com/belinaydenek0/basic-butterflies/blob/main/say%C4%B1tahminoyunu.py" target="_blank">Tkinter ile Sayı Tahmin Oyunu (Python)</a></li>
+                    <li><a href="https://github.com/belinaydenek0/basic-butterflies/blob/main/minihesapmakinesi.py" target="_blank">Tkinter ile Hesap Makinesi (Python)</a></li>
+                    <li><a href="https://github.com/belinaydenek0/basic-butterflies/blob/main/ya%C5%9Fag%C3%B6remesaj.py" target="_blank">Tkinter ile Yaşa Göre Mesaj (Python)</a></li>
+                    <li><a href="https://github.com/belinaydenek0/basic-butterflies/blob/main/NotAraligiUygulamasi/src/Main.java" target="_blank">Harf Notu Uygulaması (Java)</a></li>
+                    <li><a href="https://github.com/belinaydenek0/basic-butterflies/blob/main/KafeSiparis/src/Main.java" target="_blank">Kafe Sipariş Uygulaması (Java)</a></li>
+                </ul>
+            </li>
+            <li><a href="#fav">Hobilerim</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
+        </ul>
+    </nav>
+
+    <!-- SOL SIDEBAR -->
+    <aside class="sidebar">
+        <img class="logo-sidebar" src="resim/BLNY.png" alt="Logo">
+        <nav>
+            <ul>
+                <li><a href="giris.html">Giriş Sayfası</a></li>
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="#about">Hakkımda</a></li>
+                <li><a href="#projects">Projelerim</a></li>
+                <li><a href="#fav">Hobilerim</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- SAĞ SIDEBAR -->
+    <aside class="sidebar-right">
+        <h3>Son Projem</h3>
+        <div class="project-showcase">
+            <h4>Kafe Sipariş Uygulaması</h4>
+            <p>Java ile geliştirdiğim kafe sipariş sistemi, müşterilerin menüden seçim yaparak sipariş oluşturmasını sağlayan bir uygulamadır.</p>
+        </div>
+
+        <h3>Takvim</h3>
+        <div class="calendar">
+            <div class="calendar-header">
+                <button onclick="changeMonth(-1)">❮</button>
+                <span id="currentMonth">Kasım 2024</span>
+                <button onclick="changeMonth(1)">❯</button>
+            </div>
+            <div class="calendar-grid" id="calendarGrid">
+            </div>
+        </div>
+    </aside>
+
+    <main>
+        <h1>Belinay'ın Web Sayfası</h1>
+
+        <!-- SLIDER -->
+        <div class="slider-container" id="mainSlider">
+            <div class="slider">
+                <button class="slider-arrow arrow-left" onclick="changeSlide(-1)">❮</button>
+                <button class="slider-arrow arrow-right" onclick="changeSlide(1)">❯</button>
+                <img src="resim/Snapchat-1868317360.jpg" class="slide active" alt="Slide 1">
+                <img src="resim/Snapchat-482913803.jpg" class="slide" alt="Slide 2">
+                <img src="resim/Snapchat-687595010.jpg" class="slide" alt="Slide 3">
+            </div>
+            <div class="slider-dots">
+                <button class="dot active" onclick="goToSlide(0)"></button>
+                <button class="dot" onclick="goToSlide(1)"></button>
+                <button class="dot" onclick="goToSlide(2)"></button>
+            </div>
+        </div>
+
+        <!-- HAKKIMDA -->
+        <section class="content-section about" id="about">
+            <h2>Hakkımda</h2>
+            <p>Ben <b>Belinay DENEK</b>, <i>yazılım mühendisliği</i> 2. sınıf öğrencisiyim. Ankara'da yaşıyorum ve tam bir Ankara kızıyım. 19 yaşındayım. Yazılım tutkum yeni şekillenmiş olsa da <i>web tasarım</i> alanını çok seviyorum, bu alanda ilerlemek istiyorum.</p>
+        </section>
+
+        <!-- PROJELER -->
+        <section class="content-section projects" id="projects">
+            <h2>Projelerim</h2>
+            <ul>
+                <li><a href="https://github.com/belinaydenek0/basic-butterflies/blob/main/say%C4%B1tahminoyunu.py" target="_blank">Tkinter ile Sayı Tahmin Oyunu (Python)</a></li>
+                <li><a href="https://github.com/belinaydenek0/basic-butterflies/blob/main/minihesapmakinesi.py" target="_blank">Tkinter ile Hesap Makinesi (Python)</a></li>
+                <li><a href="https://github.com/belinaydenek0/basic-butterflies/blob/main/ya%C5%9Fag%C3%B6remesaj.py" target="_blank">Tkinter ile Yaşa Göre Mesaj (Python)</a></li>
+                <li><a href="https://github.com/belinaydenek0/basic-butterflies/blob/main/NotAraligiUygulamasi/src/Main.java" target="_blank">Harf Notu Uygulaması (Java)</a></li>
+                <li><a href="https://github.com/belinaydenek0/basic-butterflies/blob/main/KafeSiparis/src/Main.java" target="_blank">Kafe Sipariş Uygulaması (Java)</a></li>
+            </ul>
+
+            <!-- SKILLS PROGRESS BARS -->
+            <div class="skills-container">
+                <h3>Teknoloji Yeteneklerim</h3>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">Python</span>
+                        <span class="skill-percentage">75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="75" style="width: 0%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">C/C#</span>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="80" style="width: 0%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">Java</span>
+                        <span class="skill-percentage">70%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="70" style="width: 0%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">Tkinter</span>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="80" style="width: 0%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">HTML/CSS</span>
+                        <span class="skill-percentage">95%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="95" style="width: 0%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">JavaScript</span>
+                        <span class="skill-percentage">30%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="30" style="width: 0%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GALERİ -->
+            <section class="content-section gallery" id="gallery">
+                <h2>Proje Galerisi</h2>
+                <div class="mini-sliders-container">
+                    <div class="mini-slider" onclick="changeMiniSlide(0)">
+                        <div class="mini-slider-inner">
+                            <img src="resim/Screenshot 2025-11-09 143905.png" class="mini-slide active" alt="Proje 1">
+                            <img src="resim/Screenshot 2025-11-09 150418.png" class="mini-slide" alt="Proje 1">
+                        </div>
+                        <div class="mini-slider-indicator">
+                            <span class="mini-slide-counter">1/2</span>
+                        </div>
+                    </div>
+                    <div class="mini-slider" onclick="changeMiniSlide(1)">
+                        <div class="mini-slider-inner">
+                            <img src="resim/Screenshot 2025-11-09 143928.png" class="mini-slide active" alt="Proje 2">
+                            <img src="resim/Screenshot 2025-11-09 150434.png" class="mini-slide" alt="Proje 2">
+                        </div>
+                        <div class="mini-slider-indicator">
+                            <span class="mini-slide-counter">1/2</span>
+                        </div>
+                    </div>
+                    <div class="mini-slider" onclick="changeMiniSlide(2)">
+                        <div class="mini-slider-inner">
+                            <img src="resim/Screenshot 2025-11-09 144001.png" class="mini-slide active" alt="Proje 3">
+                            <img src="resim/Screenshot 2025-11-09 150450.png" class="mini-slide" alt="Proje 3">
+                        </div>
+                        <div class="mini-slider-indicator">
+                            <span class="mini-slide-counter">1/2</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            </section>
+
+            <!-- HOBİLER -->
+            <section class="content-section fav" id="fav">
+                <h2>Hobilerim</h2>
+                <ol>
+                    <li>Kitap Okumak 📚</li>
+                    <li>Çizim Yapmak 🎨</li>
+                    <li>Örgü Örmek 🧶</li>
+                    <li>Tatlı Yapmak 🥧</li>
+                    <li>Dizi/Film İzlemek 🎞️</li>
+                    <li>Badminton Oynamak 🏸</li>
+                </ol>
+            </section>
+
+            <!-- FOOTER -->
+            <footer class="footer">
+                <img src="resim/BLNY.png" alt="Logo" class="footer-logo">
+                <p>&copy; 2025 Belinay Denek</p>
+            </footer>
+    </main>
+
+    <script>
+        
+        // THEME TOGGLE
+        const themeToggle = document.getElementById('themeToggle');
+        const currentTheme = localStorage.getItem('theme') || 'dark';
+        
+        document.documentElement.setAttribute('data-theme', currentTheme);
+        updateThemeButton(currentTheme);
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeButton(newTheme);
+        });
+
+        function updateThemeButton(theme) {
+            themeToggle.textContent = theme === 'dark' ? '🌙' : '☀️';
+        }
+
+        // SCROLL TO TOP
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollToTopBtn.classList.add('show');
+            } else {
+                scrollToTopBtn.classList.remove('show');
+            }
+        });
+
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // SCROLL ANIMATIONS
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        
+        document.addEventListener('DOMContentLoaded', () => {
+            const animatedElements = document.querySelectorAll('.content-section, .slider-container, .mini-slider');
+            animatedElements.forEach(el => observer.observe(el));
+        });
+
+        // SKILLS ANIMATION
+        function animateSkills() {
+            const skillProgresses = document.querySelectorAll('.skill-progress');
+            skillProgresses.forEach(progress => {
+                const width = progress.getAttribute('data-width');
+                let currentWidth = 0;
+                const targetWidth = parseInt(width);
+                const increment = targetWidth / 100;
+                
+                const fillProgressBar = () => {
+                    if (currentWidth < targetWidth) {
+                        currentWidth += increment;
+                        progress.style.width = currentWidth + '%';
+                        requestAnimationFrame(fillProgressBar);
+                    } else {
+                        progress.style.width = targetWidth + '%';
+                    }
+                };
+                
+                const skillObserver = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            fillProgressBar();
+                            skillObserver.unobserve(progress);
+                        }
+                    });
+                });
+                
+                skillObserver.observe(progress);
+            });
+        }
+
+        // SLIDER FUNCTIONS
+        let currentSlide = 0;
+        let slideInterval;
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.dot');
+        const totalSlides = slides.length;
+
+        function showSlide(index) {
+            if (index >= totalSlides) currentSlide = 0;
+            else if (index < 0) currentSlide = totalSlides - 1;
+            else currentSlide = index;
+
+            slides.forEach(slide => slide.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+
+            slides[currentSlide].classList.add('active');
+            dots[currentSlide].classList.add('active');
+        }
+
+        function changeSlide(direction) {
+            clearInterval(slideInterval);
+            showSlide(currentSlide + direction);
+            startAutoSlide();
+        }
+
+        function goToSlide(index) {
+            clearInterval(slideInterval);
+            showSlide(index);
+            startAutoSlide();
+        }
+
+        function startAutoSlide() {
+            slideInterval = setInterval(() => {
+                showSlide(currentSlide + 1);
+            }, 5000);
+        }
+
+        // MINI SLIDER FUNCTIONS
+        let miniSlideStates = [0, 0, 0];
+        const miniSliders = document.querySelectorAll('.mini-slider');
+
+        function changeMiniSlide(sliderIndex) {
+            const slider = miniSliders[sliderIndex];
+            const slides = slider.querySelectorAll('.mini-slide');
+            const counter = slider.querySelector('.mini-slide-counter');
+            const totalSlides = slides.length;
+            
+            slides[miniSlideStates[sliderIndex]].classList.remove('active');
+            miniSlideStates[sliderIndex] = (miniSlideStates[sliderIndex] + 1) % totalSlides;
+            slides[miniSlideStates[sliderIndex]].classList.add('active');
+            counter.textContent = `${miniSlideStates[sliderIndex] + 1}/${totalSlides}`;
+        }
+
+        // CALENDAR FUNCTIONS
+        let currentDate = new Date();
+
+        function generateCalendar() {
+            const monthNames = ["Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran",
+                "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"];
+            
+            const year = currentDate.getFullYear();
+            const month = currentDate.getMonth();
+            
+            document.getElementById('currentMonth').textContent = `${monthNames[month]} ${year}`;
+            
+            const firstDay = new Date(year, month, 1);
+            const lastDay = new Date(year, month + 1, 0);
+            const startingDay = firstDay.getDay();
+            const totalDays = lastDay.getDate();
+            
+            const calendarGrid = document.getElementById('calendarGrid');
+            calendarGrid.innerHTML = '';
+            
+            // Gün başlıkları
+            const days = ['Pzt', 'Sal', 'Çar', 'Per', 'Cum', 'Cmt', 'Paz'];
+            days.forEach(day => {
+                const dayElement = document.createElement('div');
+                dayElement.className = 'calendar-day header';
+                dayElement.textContent = day;
+                calendarGrid.appendChild(dayElement);
+            });
+            
+            // Boş günler
+            for (let i = 0; i < startingDay; i++) {
+                const emptyDay = document.createElement('div');
+                emptyDay.className = 'calendar-day';
+                calendarGrid.appendChild(emptyDay);
+            }
+            
+            // Günler
+            const today = new Date();
+            for (let day = 1; day <= totalDays; day++) {
+                const dayElement = document.createElement('div');
+                dayElement.className = 'calendar-day';
+                dayElement.textContent = day;
+                
+                if (day === today.getDate() && month === today.getMonth() && year === today.getFullYear()) {
+                    dayElement.classList.add('today');
+                }
+                
+                calendarGrid.appendChild(dayElement);
+            }
+        }
+
+        function changeMonth(direction) {
+            currentDate.setMonth(currentDate.getMonth() + direction);
+            generateCalendar();
+        }
+
+        // INITIALIZE EVERYTHING
+        document.addEventListener("DOMContentLoaded", function () {
+            showSlide(currentSlide);
+            startAutoSlide();
+            
+            miniSliders.forEach((slider, index) => {
+                const slides = slider.querySelectorAll('.mini-slide');
+                const counter = slider.querySelector('.mini-slide-counter');
+                const totalSlides = slides.length;
+                counter.textContent = `1/${totalSlides}`;
+            });
+            
+            generateCalendar();
+            animateSkills();
+        });
+    </script>
+</body>
+</html>
